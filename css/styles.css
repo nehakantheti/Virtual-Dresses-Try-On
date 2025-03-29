@@ -1,0 +1,102 @@
+.home-link{
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.landing-page {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.hero {
+  background: url('/images/hero-bg.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.hero-content button:hover {
+  background-color: #555;
+}
+
+.clothing-gallery {
+  padding: 2rem;
+}
+
+.clothing-gallery h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-item {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+
+/* FOOTER */
+.footer{
+  display: flex;
+  flex-direction: row;
+  /* gap: 1rem; */
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,75 @@
+/* src/assets/styles/Dresses.css */
+.dresses-page {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+.dresses-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.dresses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.dress-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dress-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dress-card img {
+  width: 100%;
+  height: auto;
+}
+
+.dress-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dress-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.dress-info p {
+  margin: 0.5rem 0 1rem;
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #666;
+}
+
+.dress-info button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dress-info button:hover {
+  background-color: #555;
+}
