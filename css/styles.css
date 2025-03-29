@@ -29,8 +29,9 @@
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hero-content p {
@@ -65,7 +66,7 @@
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
 }
 
@@ -84,11 +85,50 @@
 }
 
 .gallery-item img {
-  width: 100%;
+  width: 70%;
   height: auto;
   border-radius: 4px;
   margin-bottom: 0.5rem;
 }
+
+
+/* TRY-ON PAGE CSS */
+.tryon-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  gap: 30px;
+  /* height: 100vh; */
+  align-items: center;
+}
+
+.input-section {
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-section input,
+.input-section select,
+.input-section button {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.result-section {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-preview img {
+  width: 80%;
+  border-radius: 10px;
+}
+
 
 
 /* FOOTER */

@@ -4,8 +4,9 @@ import Navbar from "./navbar";
 import Home from "./home";
 import Dresses from "./dresses";
 import Footer from "./footer";
+import TryOnPage from "./tryon";
 
-const TryOn = () => <div style={{ padding: '2rem' }}><h1>Try-On Page (Under Construction)</h1></div>;
+// const TryOn = () => <div style={{ padding: '2rem' }}><h1>Try-On Page (Under Construction)</h1></div>;
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tryon/:id" element={<TryOn />} />
+        <Route path="/tryon/:id" element={<TryOnPage />} />
         <Route path="/dresses" element={<Dresses />} />
       </Routes>
       <Footer />
