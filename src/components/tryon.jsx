@@ -71,4 +71,35 @@ const TryOnPage = () => {
   );
 };
 
+const handleTryOn = async () => {
+  if (!userDetails.uploadedImage) {
+      alert("Please upload your image before trying on.");
+      return;
+  }
+
+  const formData = new FormData();
+  formData.append('image', userDetails.uploadedImage);
+  formData.append('height', userDetails.height);
+  formData.append('weight', userDetails.weight);
+  formData.append('bodyType', userDetails.bodyType);
+
+  try {
+      const response = await fetch('http://localhost:5000/upload', {
+          method: 'POST',
+          body: formData,
+      });
+
+      const data = await response.json();
+      if (data.imageUrl) {
+          setTryOnImage(`http://localhost:5000${data.imageUrl}`);
+      } else {
+          alert("Failed to process image.");
+      }
+  } catch (error) {
+      console.error("Error:", error);
+      alert("Server error.");
+  }
+};
+
+
 export default TryOnPage;
